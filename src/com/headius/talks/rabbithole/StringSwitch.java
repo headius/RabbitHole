@@ -2,6 +2,21 @@ package com.headius.talks.rabbithole;
 
 public class StringSwitch {
     public static void main(String[] args) {
+        String count = "unknown";
+        switch (args.length) {
+            case 0: count = "zero"; break;
+            case 1: count = "one"; break;
+            case 2: count = "two"; break;
+        }
+        
+        switch (args.length) {
+            case 100000: count = "one million"; break;
+            case 200000: count = "two million"; break;
+            case 300000: count = "three million"; break;
+        }
+        
+        System.out.println(count);
+        
         System.out.println(chooseGreeting("Java"));
         
         for (int i = 0; i < 100000; i++) {
