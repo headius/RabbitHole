@@ -10,8 +10,8 @@ public class StringSwitch {
         }
         
         switch (args.length) {
-            case 100000: count = "one million"; break;
             case 200000: count = "two million"; break;
+            case 100000: count = "one million"; break;
             case 300000: count = "three million"; break;
         }
         
